@@ -17,7 +17,7 @@
     It also has customizeable webhooks, so you can basically control anything that has an open API with your voice. If you can send data to a URL to do a thing, you can program it in Flex TV.
     It is recomended to use reverse proxy to enable https
   </Description>
-  <Registry>https://hub.docker.com/r/igitalhigh/flextv</Registry>
+  <Registry>https://hub.docker.com/r/digitalhigh/flextv</Registry>
   <GitHub>https://github.com/d8ahazard/unraid-repository</GitHub>
   <Repository>digitalhigh/flextv</Repository>
   <Support>https://github.com/d8ahazard/FlexTV</Support>
