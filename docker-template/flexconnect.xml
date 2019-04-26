@@ -23,6 +23,11 @@
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
+	<Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/plex</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
   </Data>
   <Networking>
     <Mode>host</Mode>    
