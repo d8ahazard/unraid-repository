@@ -25,14 +25,7 @@
     </Volume>
   </Data>
   <Networking>
-    <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>5667</HostPort>
-        <ContainerPort>5667</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
+    <Mode>host</Mode>    
   </Networking>
   <DonateText>If you like it, consider buying me a beer.</DonateText>
   <DonateLink>https://www.paypal.me/donate.to.digitalhigh</DonateLink>
