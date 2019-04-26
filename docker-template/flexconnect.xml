@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Date>2018-11-20</Date>
+  <Beta>False</Beta>
+  <Category>Tools</Category>
+  <Name>FlexConnect</Name>
+  <Project>https://github.com/d8ahazard/FlexConnect</Project>
+  <Overview>
+    FlexConnect is a stand-alone version of the FlexTV Plugin. It is intended as a replacement once Plex sunsest the plugin feature. This is currently for development purposes only.
+  </Overview>
+  <Description>
+    FlexConnect is a stand-alone version of the FlexTV Plugin. It is intended as a replacement once Plex sunsest the plugin feature. This is currently for development purposes only.
+  </Description>
+  <Registry>https://hub.docker.com/r/digitalhigh/flexconnect</Registry>
+  <GitHub>https://github.com/d8ahazard/unraid-repository</GitHub>
+  <Repository>digitalhigh/flexconnect</Repository>
+  <Support>https://github.com/d8ahazard/FlexConnect</Support>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/FlexConnect</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5667</HostPort>
+        <ContainerPort>5667</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <DonateText>If you like it, consider buying me a beer.</DonateText>
+  <DonateLink>https://www.paypal.me/donate.to.digitalhigh</DonateLink>
+  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+  <WebUI>http://[IP]:[PORT:5667]</WebUI>
+  <Banner></Banner>
+  <Icon>https://github.com/d8ahazard/Phlex/raw/master/img/android-icon-144x144.png</Icon>
+</Containers>
