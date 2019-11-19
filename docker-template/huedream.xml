@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Date>2019-11-19</Date>
+  <Beta>False</Beta>
+  <Category>Tools</Category>
+  <Name>HueDream</Name>
+  <Project>https://github.com/d8ahazard/HueDream</Project>
+  <Overview>
+    HueDream synchronizes your Hue Lights with a DreamScreen controller.
+  </Overview>
+  <Description>
+   HueDream synchronizes your Hue Lights with a DreamScreen controller.
+  </Description>
+  <Registry>https://hub.docker.com/r/digitalhigh/huedream</Registry>
+  <GitHub>https://github.com/d8ahazard/unraid-repository</GitHub>
+  <Repository>digitalhigh/huedream</Repository>
+  <Support>https://github.com/d8ahazard/huedream</Support>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/HueDream</HostDir>
+      <ContainerDir>/opt/huedream</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish>      
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>ASPNETCORE_URLS</Name>
+      <Value>http://+:5699</Value>
+    </Variable>    
+  </Environment>
+  <DonateText>If you like it, consider buying me a beer.</DonateText>
+  <DonateLink>https://www.paypal.me/donate.to.digitalhigh</DonateLink>
+  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+  <WebUI>http://[IP]:[PORT:5699]</WebUI>
+  <Banner></Banner>
+  <Icon>https://github.com/d8ahazard/HueDream/raw/master/logo_500.png</Icon>
+</Containers>
