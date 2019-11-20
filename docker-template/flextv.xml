@@ -1,35 +1,35 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Containers>
-  <Date>2018-11-20</Date>
-  <Beta>False</Beta>
-  <Category>Tools</Category>
+<?xml version="1.0"?>
+<Container version="2">
   <Name>FlexTV</Name>
-  <Project>https://github.com/d8ahazard/FlexTV</Project>
-  <Overview>
-    Flex TV. is a web application that interfaces between google Assistant and Plex to allow you to control playback of media using Actions for Google or IFTTT.
-    Additionally, it interfaces with the API’s for Sonarr, Radarr, Couchpotato, Sickbeard, and Sickrage.
-    It also has customizeable webhooks, so you can basically control anything that has an open API with your voice. If you can send data to a URL to do a thing, you can program it in Flex TV.
-    It is recomended to use reverse proxy to enable https
-  </Overview>
-  <Description>
-    Flex TV. is a web application that interfaces between google Assistant and Plex to allow you to control playback of media using Actions for Google or IFTTT.
-    Additionally, it interfaces with the API’s for Sonarr, Radarr, Couchpotato, Sickbeard, and Sickrage.
-    It also has customizeable webhooks, so you can basically control anything that has an open API with your voice. If you can send data to a URL to do a thing, you can program it in Flex TV.
-    It is recomended to use reverse proxy to enable https
-  </Description>
-  <Registry>https://hub.docker.com/r/digitalhigh/flextv</Registry>
-  <GitHub>https://github.com/d8ahazard/unraid-repository</GitHub>
   <Repository>digitalhigh/flextv</Repository>
-  <Support>https://github.com/d8ahazard/FlexTV</Support>
-  <BindTime>true</BindTime>
+  <Registry>https://hub.docker.com/r/igitalhigh/flextv</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/FlexTV</HostDir>
-      <ContainerDir>/config</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
+  <Support>https://github.com/d8ahazard/FlexTV</Support>
+  <Project>https://github.com/d8ahazard/FlexTV</Project>
+  <Overview>&#xD;
+    Flex TV. is a web application that interfaces between google Assistant and Plex to allow you to control playback of media using Actions for Google or IFTTT.&#xD;
+    Additionally, it interfaces with the API&#x2019;s for Sonarr, Radarr, Couchpotato, Sickbeard, and Sickrage.&#xD;
+    It also has customizeable webhooks, so you can basically control anything that has an open API with your voice. If you can send data to a URL to do a thing, you can program it in Flex TV.&#xD;
+    It is recomended to use reverse proxy to enable https&#xD;
+  </Overview>
+  <Category>Tools</Category>
+  <WebUI>http://[IP]:[PORT:5666]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/d8ahazard/Phlex/raw/master/img/android-icon-144x144.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DonateText>If you like it, consider buying me a beer.</DonateText>
+  <DonateLink>https://www.paypal.me/donate.to.digitalhigh</DonateLink>
+  <Description>&#xD;
+    Flex TV. is a web application that interfaces between google Assistant and Plex to allow you to control playback of media using Actions for Google or IFTTT.&#xD;
+    Additionally, it interfaces with the API&#x2019;s for Sonarr, Radarr, Couchpotato, Sickbeard, and Sickrage.&#xD;
+    It also has customizeable webhooks, so you can basically control anything that has an open API with your voice. If you can send data to a URL to do a thing, you can program it in Flex TV.&#xD;
+    It is recomended to use reverse proxy to enable https&#xD;
+  </Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
@@ -40,10 +40,15 @@
       </Port>
     </Publish>
   </Networking>
-  <DonateText>If you like it, consider buying me a beer.</DonateText>
-  <DonateLink>https://www.paypal.me/donate.to.digitalhigh</DonateLink>
-  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
-  <WebUI>http://[IP]:[PORT:5666]</WebUI>
-  <Banner></Banner>
-  <Icon>https://github.com/d8ahazard/Phlex/raw/master/img/android-icon-144x144.png</Icon>
-</Containers>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/FlexTV</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Host Port 1" Target="80" Default="5666" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">5666</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/FlexTV" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/FlexTV</Config>
+</Container>

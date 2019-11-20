@@ -1,41 +1,48 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Containers>
-  <Date>2018-11-20</Date>
-  <Beta>False</Beta>
-  <Category>Tools</Category>
+<?xml version="1.0"?>
+<Container version="2">
   <Name>FlexConnect</Name>
-  <Project>https://github.com/d8ahazard/FlexConnect</Project>
-  <Overview>
-    FlexConnect is a stand-alone version of the FlexTV Plugin. It is intended as a replacement once Plex sunsest the plugin feature. This is currently for development purposes only.
-  </Overview>
-  <Description>
-    FlexConnect is a stand-alone version of the FlexTV Plugin. It is intended as a replacement once Plex sunsest the plugin feature. This is currently for development purposes only.
-  </Description>
-  <Registry>https://hub.docker.com/r/digitalhigh/flexconnect</Registry>
-  <GitHub>https://github.com/d8ahazard/unraid-repository</GitHub>
   <Repository>digitalhigh/flexconnect</Repository>
-  <Support>https://github.com/d8ahazard/FlexConnect</Support>
-  <BindTime>true</BindTime>
+  <Registry>https://hub.docker.com/r/digitalhigh/flexconnect</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
   <Privileged>false</Privileged>
+  <Support>https://github.com/d8ahazard/FlexConnect</Support>
+  <Project>https://github.com/d8ahazard/FlexConnect</Project>
+  <Overview>&#xD;
+    FlexConnect is a stand-alone version of the FlexTV Plugin. It is intended as a replacement once Plex sunsest the plugin feature. This is currently for development purposes only.&#xD;
+  </Overview>
+  <Category>Tools</Category>
+  <WebUI>http://[IP]:[PORT:5667]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/d8ahazard/Phlex/raw/master/img/android-icon-144x144.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1556307140</DateInstalled>
+  <DonateText>If you like it, consider buying me a beer.</DonateText>
+  <DonateLink>https://www.paypal.me/donate.to.digitalhigh</DonateLink>
+  <Description>&#xD;
+    FlexConnect is a stand-alone version of the FlexTV Plugin. It is intended as a replacement once Plex sunsest the plugin feature. This is currently for development purposes only.&#xD;
+  </Description>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
   <Data>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/plex</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
     <Volume>
       <HostDir>/mnt/user/appdata/FlexConnect</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
-	<Volume>
-      <HostDir></HostDir>
-      <ContainerDir>/plex</ContainerDir>
-      <Mode>ro</Mode>
-    </Volume>
   </Data>
-  <Networking>
-    <Mode>host</Mode>    
-  </Networking>
-  <DonateText>If you like it, consider buying me a beer.</DonateText>
-  <DonateLink>https://www.paypal.me/donate.to.digitalhigh</DonateLink>
-  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
-  <WebUI>http://[IP]:[PORT:5667]</WebUI>
-  <Banner></Banner>
-  <Icon>https://github.com/d8ahazard/Phlex/raw/master/img/android-icon-144x144.png</Icon>
-</Containers>
+  <Environment/>
+  <Labels/>
+  <Config Name="Host Path 2" Target="/plex" Default="" Mode="ro" Description="Container Path: /plex" Type="Path" Display="always" Required="true" Mask="false">/mnt/disks/GANDALF_PMSData/Plex Media Server/</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/FlexConnect" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/FlexConnect</Config>
+</Container>

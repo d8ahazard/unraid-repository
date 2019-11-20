@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Containers>
+<?xml version="1.0"?>
+<Container version="2">
   <Date>2019-11-19</Date>
   <Beta>False</Beta>
   <Category>Tools</Category>
@@ -16,10 +16,14 @@
   <Repository>digitalhigh/huedream</Repository>
   <Support>https://github.com/d8ahazard/huedream</Support>
   <BindTime>true</BindTime>
+  <Registry/>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/HueDream</HostDir>
+      <HostDir>/mnt/user/appdata/huedream/</HostDir>
       <ContainerDir>/opt/huedream</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -41,4 +45,7 @@
   <WebUI>http://[IP]:[PORT:5699]</WebUI>
   <Banner></Banner>
   <Icon>https://github.com/d8ahazard/HueDream/raw/master/logo_500.png</Icon>
-</Containers>
+<Labels/>
+  <Config Name="UserData Location" Target="/opt/huedream" Default="" Mode="rw" Description="Where to store HueData config." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/huedream/</Config>
+  <Config Name="Web Server Port" Target="ASPNETCORE_URLS" Default="" Mode="" Description="Change 5699 to whichever port you want the Web UI to be accessible from." Type="Variable" Display="always" Required="false" Mask="false">http://+:5699</Config>
+</Container>
