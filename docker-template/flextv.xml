@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>FlexTV</Name>
   <Repository>digitalhigh/flextv</Repository>
-  <Registry>https://hub.docker.com/r/igitalhigh/flextv</Registry>
+  <Registry>https://hub.docker.com/r/digitalhigh/flextv</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
