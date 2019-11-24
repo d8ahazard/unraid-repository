@@ -44,7 +44,7 @@
   <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
   <WebUI>http://[IP]:[PORT:5699]</WebUI>
   <Banner></Banner>
-  <Icon>https://github.com/d8ahazard/HueDream/raw/master/logo_500.png</Icon>
+  <Icon>https://github.com/d8ahazard/HueDream/blob/master/wwwroot/img/ic_launcher.png?raw=true</Icon>
 <Labels/>
   <Config Name="UserData Location" Target="/opt/huedream" Default="" Mode="rw" Description="Where to store HueData config." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/huedream/</Config>
   <Config Name="Web Server Port" Target="ASPNETCORE_URLS" Default="" Mode="" Description="Change 5699 to whichever port you want the Web UI to be accessible from." Type="Variable" Display="always" Required="false" Mask="false">http://+:5699</Config>
