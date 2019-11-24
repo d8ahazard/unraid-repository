@@ -24,7 +24,7 @@
   <Data>
     <Volume>
       <HostDir>/mnt/user/appdata/huedream/</HostDir>
-      <ContainerDir>/opt/huedream</ContainerDir>
+      <ContainerDir>/etc/huedream</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
