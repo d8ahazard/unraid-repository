@@ -42,6 +42,7 @@
 <Labels/>
   <Config Name="UserData Location" Target="/etc/huedream" Default="" Mode="rw" Description="Where to store HueData config." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/huedream/</Config>
   <Config Type="Port" Name="Hue Discovery" Target="1900" Default="1900" Mode="udp" Description="Hue Bridge discovery port." Display="always" Required="true">1900</Config>
+  <Config Type="Port" Name="Hue MDNS Discovery" Target="5353" Default="5353" Mode="udp" Description="Hue Bridge discovery port (MDNS)." Display="always" Required="true">5353</Config>
   <Config Type="Port" Name="Hue Streaming" Target="2100" Default="2100" Mode="udp" Description="Hue Bridge streaming port." Display="always" Required="true">2100</Config>
   <Config Type="Port" Name="Web UI" Target="5699" Default="5699" Mode="udp" Description="Web UI port." Display="always" Required="true">5699</Config>
   <Config Type="Port" Name="DS Communication" Target="8888" Default="8888" Mode="udp" Description="DreamScreen emulation port." Display="always" Required="true">8888</Config>
