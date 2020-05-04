@@ -3,18 +3,18 @@
   <Date>2020-05-04</Date>
   <Beta>False</Beta>
   <Category>Tools</Category>
-  <Name>HueDream</Name>
-  <Project>https://github.com/d8ahazard/HueDream</Project>
+  <Name>Glimmr</Name>
+  <Project>https://github.com/d8ahazard/glimmr</Project>
   <Overview>
-    HueDream synchronizes your Hue Lights with a DreamScreen controller.
+    Glimmr synchronizes your Hue Lights, nanoleaf panels, and lifx bulbs with a DreamScreen controller.
   </Overview>
   <Description>
-   HueDream synchronizes your Hue Lights with a DreamScreen controller.
+   Glimmr synchronizes your Hue Lights, nanoleaf panels, and lifx bulbs with a DreamScreen controller.
   </Description>
-  <Registry>https://hub.docker.com/r/digitalhigh/huedream</Registry>
+  <Registry>https://hub.docker.com/r/digitalhigh/glimmr</Registry>
   <GitHub>https://github.com/d8ahazard/unraid-repository</GitHub>
-  <Repository>digitalhigh/huedream</Repository>
-  <Support>https://github.com/d8ahazard/huedream</Support>
+  <Repository>digitalhigh/glimmr</Repository>
+  <Support>https://github.com/d8ahazard/glimmr</Support>
   <BindTime>true</BindTime>
   <Registry/>
   <Network>host</Network>
@@ -23,8 +23,8 @@
   <Privileged>false</Privileged>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/huedream/</HostDir>
-      <ContainerDir>/etc/huedream</ContainerDir>
+      <HostDir>/mnt/user/appdata/glimmr/</HostDir>
+      <ContainerDir>/etc/glimmr</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
@@ -38,9 +38,9 @@
   <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
   <WebUI>http://[IP]:[PORT:5699]</WebUI>
   <Banner></Banner>
-  <Icon>https://github.com/d8ahazard/HueDream/blob/master/wwwroot/img/ic_launcher.png?raw=true</Icon>
+  <Icon>https://github.com/d8ahazard/glimmr/blob/master/wwwroot/img/ic_launcher.png?raw=true</Icon>
 <Labels/>
-  <Config Name="UserData Location" Target="/etc/huedream" Default="" Mode="rw" Description="Where to store HueData config." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/huedream/</Config>
+  <Config Name="UserData Location" Target="/etc/glimmr" Default="" Mode="rw" Description="Where to store HueData config." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/glimmr/</Config>
   <Config Type="Port" Name="Web UI" Target="5699" Default="5699" Mode="tcp" Description="Web UI port." Display="always" Required="true">5699</Config>  
   <Config Type="Port" Name="Hue SSDP Discovery" Target="1900" Default="1900" Mode="udp" Description="Hue Bridge discovery port." Display="always" Required="true">1900</Config>
   <Config Type="Port" Name="Hue/Nanoleaf MDNS Discovery" Target="5353" Default="5353" Mode="udp" Description="MDNS Discovery Port" Display="always" Required="true">5353</Config>
