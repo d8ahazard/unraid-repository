@@ -38,7 +38,7 @@
   <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
   <WebUI>http://[IP]:[PORT:5699]</WebUI>
   <Banner></Banner>
-  <Icon>https://github.com/d8ahazard/glimmr/blob/master/wwwroot/img/ic_launcher.png?raw=true</Icon>
+  <Icon>https://github.com/d8ahazard/unraid-repository/blob/master/img/glimmr_icon.png?raw=true</Icon>
 <Labels/>
   <Config Name="UserData Location" Target="/etc/glimmr" Default="" Mode="rw" Description="Where to store HueData config." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/glimmr/</Config>
   <Config Type="Port" Name="Web UI" Target="5699" Default="5699" Mode="tcp" Description="Web UI port." Display="always" Required="true">5699</Config>  
