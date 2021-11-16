@@ -41,7 +41,7 @@
   <Icon>https://github.com/d8ahazard/unraid-repository/blob/master/img/glimmr_icon.png?raw=true</Icon>
 <Labels/>
   <Config Name="UserData Location" Target="/etc/glimmr" Default="" Mode="rw" Description="Where to store HueData config." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/glimmr/</Config>
-  <Config Type="Port" Name="Web UI" Target="5699" Default="5699" Mode="tcp" Description="Web UI port." Display="always" Required="true">5699</Config>  
+  <Config Type="Port" Name="Web UI" Target="80" Default="80" Mode="tcp" Description="Web UI port." Display="always" Required="true">80</Config>  
   <Config Type="Port" Name="Hue SSDP Discovery" Target="1900" Default="1900" Mode="udp" Description="Hue Bridge discovery port." Display="always" Required="true">1900</Config>
   <Config Type="Port" Name="Hue/Nanoleaf MDNS Discovery" Target="5353" Default="5353" Mode="udp" Description="MDNS Discovery Port" Display="always" Required="true">5353</Config>
   <Config Type="Port" Name="Hue Streaming" Target="2100" Default="2100" Mode="udp" Description="Hue Bridge streaming port." Display="always" Required="true">2100</Config>
