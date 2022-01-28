@@ -36,7 +36,7 @@
   <DonateText>If you like it, consider buying me a beer.</DonateText>
   <DonateLink>https://www.paypal.me/donate.to.digitalhigh</DonateLink>
   <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
-  <WebUI>http://[IP]:[PORT:5699]</WebUI>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
   <Banner></Banner>
   <Icon>https://github.com/d8ahazard/unraid-repository/blob/master/img/glimmr_icon.png?raw=true</Icon>
 <Labels/>
